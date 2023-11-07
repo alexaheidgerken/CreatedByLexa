@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>CreatedByLexa</title>
+</head>
+<body>
+    <header>
+        <img src="images\logotop.jpeg" alt="CreatedByLexa Logo" id="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://createdbylexa.etsy.com" target="_blank">Etsy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/barbie');
+    </style>
+
+    <div class="image-slider-row">
+        <div class="image-slider">
+            <ul>
+                <li><img src="images\spidercrochet.jpg" alt="SpiderMan Crochet">
+                    <figcaption>Spiderman Crocheted Beanie from Into The Spiderverse \n Purchase on my etsy</figcaption>
+                </li>
+                <li><img src="images\spidergrochet2.jpg" alt="MilesMorales Crochet">
+                    <figcaption>Miles Morales Crocheted Beanie from Into The Spiderverse \n Purchase on my etsy</figcaption>
+                </li>
+                <li><img src="images\spidercrochet3.jpg" alt="Spidergwen Crochet">
+                    <figcaption>SpiderGwen Crocheted Beanie from Into The Spiderverse \n Purchase on my etsy</figcaption>
+                </li>
+         </ul>
+         <button id="prev">Previous</button>
+        <button id="next">Next</button>
+        </div>
+        <div class="image-slider">
+            <ul>
+                <li><img src="images\triceratops.jpg" alt="Triceratops painting">
+                    <figcaption>Muted Triceratops Painting, 1/3 in set</figcaption>
+                </li>
+                <li><img src="images\brachiosaurus.jpg" alt="brachiosaurus painting">
+                    <figcaption>Muted Brachiosaurus Painting, 2/3 in set</figcaption>
+                </li>
+                <li><img src="images\stegosarus.jpg" alt="stegosarus painting">
+                    <figcaption>Muted Stegosaurus Painting, 3/3 in set</figcaption>
+                </li>
+         </ul>
+         <button id="prev">Previous</button>
+        <button id="next">Next</button>
+        </div>
+        <div class="image-slider">
+            <ul>
+                <li><img src="images\corset1.jpg" alt="front corset">
+                    <figcaption>Zelda Stained Glass 3D printed Corset</figcaption>
+                </li>
+                <li><img src="images\corset2.jpg" alt="back corset">
+                    <figcaption>Zelda Stained Glass 3D printed Corset</figcaption>
+                </li>
+                <li><img src="images\corset3.jpg" alt="left side corset">
+                
+                    <figcaption>Zelda Stained Glass 3D printed Corset</figcaption></li>
+                <li><img src="images\corset4.jpg" alt="right side corset">
+                
+                    <figcaption>Zelda Stained Glass 3D printed Corset</figcaption></li>
+        </ul>
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+        </div>
+    </div>
+
+
+    <script>
+        const imageSlider = document.querySelector(".image-slider ul");
+        const prevButton = document.getElementById("prev");
+        const nextButton = document.getElementById("next");
+        let currentIndex = 0;
+    
+        function navigateSlider(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = 0;
+            } else if (currentIndex >= imageSlider.children.length) {
+                currentIndex = imageSlider.children.length - 1;
+            }
+            imageSlider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+    
+        prevButton.addEventListener("click", () => navigateSlider(-1));
+        nextButton.addEventListener("click", () => navigateSlider(1));
+    </script>
+
+</body>
+</html>

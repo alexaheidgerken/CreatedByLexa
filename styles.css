@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Barbie', sans-serif;
+    src: url(fonts\Barbiefont.ttf);
+}
+
+
+
+body {
+    font-family: 'Barbie', sans-serif;
+    background-color: #f2c5ec;
+}
+
+header {
+    background-color: #f2c5ec;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    font-family: 'Barbie', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    margin: 5px;
+    padding: 5px;
+    background-color: #f2c5ec;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+}
+
+#social-media {
+    margin: .01%;
+    padding: .01%;
+    background-color: #f2c5ec;
+    border-radius: 5px;
+}
+
+#social-media h2 {
+    font-size: 24px;
+}
+
+#social-media ul {
+    list-style: none;
+}
+
+#social-media li {
+    margin-bottom: 10px;
+}
+
+#social-media a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #FF69B4;
+    border-radius: 5px;
+}
+
+#social-media a:hover {
+    background-color: #FF69B4;
+    color: #fff;
+}
+/* nav bar */
+.top-nav {
+    background-color: #FF69B4;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 160px;
+}
+
+.top-nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.top-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.top-nav a:hover {
+    color: #FF69B4; 
+}
+/*logo in top page*/
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    z-index: 100;
+    max-width: 100%;
+    height: auto;
+}
+
+#about img {
+    width: 30%;
+    height: auto;
+    margin: 10px 0;
+    border: 1px solid #FF69B4;
+}
+
+.image-slider-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-slider {
+    width: 30%; /* Adjust the width as needed for the desired spacing between sliders */
+    overflow: hidden;
+}
+
+.image-slider ul {
+    list-style: none;
+    width: 400%; /* Adjust the width based on the number of images in each slider */
+    display: flex;
+    transition: 0.5s;
+}
+
+.image-slider li {
+    width: 200%; /* Adjust the width based on the number of images in each slider */
+}
+
+.image-slider img {
+    width: 200%;
+    height: auto;
+}
