@@ -131,30 +131,21 @@ section {
     border: 1px solid #FF69B4;
 }
 
-.image-slider-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.image-slider {
-    width: 30%; /* Adjust the width as needed for the desired spacing between sliders */
-    overflow: hidden;
-}
-
-.image-slider ul {
-    list-style: none;
-    width: 400%; /* Adjust the width based on the number of images in each slider */
-    display: flex;
-    transition: 0.5s;
-}
-
-.image-slider li {
-    width: 200%; /* Adjust the width based on the number of images in each slider */
-}
-
-.image-slider img {
-    width: 200%;
+#portfolio {
+    width: 200px;
     height: auto;
+    margin: 10px 0;
+    border: 1px solid #FF69B4;
+    font-family: "Barbie", sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.i1{
+    float: left;
+    padding: 5px;
 }
